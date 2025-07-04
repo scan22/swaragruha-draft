@@ -1,0 +1,47 @@
+{
+  "Alankaras": [
+    { "name": "Adi Tala Alankaram", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Rupaka Tala Alankaram", "ragam": "Mayamalavagowla", "talam": "Rupaka" },
+    { "name": "Jhampa Tala Alankaram", "ragam": "Mayamalavagowla", "talam": "Jhampa" },
+    { "name": "Triputa Tala Alankaram", "ragam": "Mayamalavagowla", "talam": "Triputa" },
+    { "name": "Mishra Chapu Tala Alankaram", "ragam": "Mayamalavagowla", "talam": "Mishra Chapu" }
+  ],
+  "Sarali Varsai": [
+    { "name": "Sarali Varisai 1", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Sarali Varisai 2", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Sarali Varisai 3", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Sarali Varisai 4", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Sarali Varisai 5", "ragam": "Mayamalavagowla", "talam": "Adi" }
+  ],
+  "Janta Varsai": [
+    { "name": "Janta Varisai 1", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janta Varisai 2", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janta Varisai 3", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janta Varisai 4", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janta Varisai 5", "ragam": "Mayamalavagowla", "talam": "Adi" }
+  ],
+  "Datu Varsai": [
+    { "name": "Datu Varisai 1", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Datu Varisai 2", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Datu Varisai 3", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Datu Varisai 4", "ragam": "Mayamalavagowla", "talam": "Adi" }
+  ],
+  "Swarajathi": [
+    { "name": "Rara Venu Gopabala", "ragam": "Bilahari", "talam": "Adi" },
+    { "name": "Sami Ninne", "ragam": "Ananda Bhairavi", "talam": "Adi" },
+    { "name": "Himagiri Tanaye", "ragam": "Shuddha Dhanyasi", "talam": "Adi" }
+  ],
+  "Varnas": [
+    { "name": "Vanajaksha", "ragam": "Kalyani", "talam": "Adi" },
+    { "name": "Ninnukori", "ragam": "Mohanam", "talam": "Adi" },
+    { "name": "Era Napai", "ragam": "Todi", "talam": "Adi" },
+    { "name": "Chalamela", "ragam": "Natakurinji", "talam": "Adi" }
+  ],
+  "Krithis": [
+    { "name": "Vatapi Ganapatim", "ragam": "Hamsadhwani", "talam": "Adi" },
+    { "name": "Endaro Mahanubhavulu", "ragam": "Sri", "talam": "Adi" },
+    { "name": "Nagumomu", "ragam": "Abheri", "talam": "Adi" },
+    { "name": "Bantu Reeti", "ragam": "Hamsanadam", "talam": "Adi" },
+    { "name": "Raghuvamsha Sudha", "ragam": "Kadanakuthuhalam", "talam": "Adi" }
+  ]
+}
