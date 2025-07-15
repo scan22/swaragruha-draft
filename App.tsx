@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import SplashScreen from 'react-native-splash-screen'; // 👈 import it
+import SplashScreen from 'react-native-splash-screen';
 
+
+import PdfViewerScreen from './screens/PdfViewerScreen'; // 👈 import it
 import HomeScreen from './screens/HomeScreen';
+//import MusicScreen from './screens/music/MusicScreen';
 import KritisScreen from './screens/KrithiScreen';
 import VarnasScreen from './screens/VarnasScreen';
 import BasicsScreen from './screens/BasicsScreen';
@@ -27,6 +30,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="HomeScreen">
         <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ title: 'Carnatic Music' }} />
+        <Stack.Screen name="PDFViewer" component={PdfViewerScreen} />
         <Stack.Screen name="KritisScreen" component={KritisScreen} />
         <Stack.Screen name="VarnasScreen" component={VarnasScreen} />
         <Stack.Screen name="BasicsScreen" component={BasicsScreen} />

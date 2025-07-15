@@ -1,18 +1,27 @@
 // screens/BasicsScreen.tsx
 
 import React from 'react';
+import musicData from '../assets/music.json';
 import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
 const BasicsScreen = ({ navigation }) => {
-  const sections = [
-    { name: 'Saralevarse', screen: 'SaraleScreen' },
-    { name: 'Datuvarse', screen: 'DatuScreen' },
-    { name: 'Jantivarse', screen: 'JantiScreen' },
-    { name: 'Alankara', screen: 'AlankaraScreen' },
-    { name: 'Gamaka', screen: 'GamakaScreen' },
-    { name: 'Swarajati', screen: 'SwarajatiScreen' },
-    { name: 'Geetegalu', screen: 'GeetegaluScreen' },
-  ];
+  type Section = {
+  name: string;
+  screen: string;
+  key: string;
+};
+
+const sections: Section[] = [
+  { name: 'Sarali Varsai', screen: 'SaraleScreen', key: 'Sarali Varsai' },
+  { name: 'Datu Varsai', screen: 'DatuScreen', key: 'Datu Varsai' },
+  { name: 'Janti Varsai', screen: 'JantiScreen', key: 'Janti Varsai' },
+  { name: 'Alankaras', screen: 'AlankaraScreen', key: 'Alankaras' },
+  { name: 'Gamaka', screen: 'GamakaScreen', key: 'Gamaka' },
+  { name: 'Swarajathi', screen: 'SwarajatiScreen', key: 'Swarajathi' },
+  { name: 'Geetegalu', screen: 'GeetegaluScreen', key: 'Geetegalu' },
+];
+
+
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
@@ -21,7 +30,11 @@ const BasicsScreen = ({ navigation }) => {
         <TouchableOpacity
           key={index}
           style={styles.button}
-          onPress={() => navigation.navigate(item.screen)}
+          onPress={() => {
+  const sectionData = musicData[item.key] || [];  // Correctly fetch by key
+  navigation.navigate(item.screen, { data: sectionData });
+}}
+
         >
           <Text style={styles.buttonText}>{item.name}</Text>
         </TouchableOpacity>
@@ -54,5 +67,6 @@ const styles = StyleSheet.create({
     color: '#fff',
   },
 });
+
 
 export default BasicsScreen;

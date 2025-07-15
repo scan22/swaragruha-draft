@@ -1,9 +1,15 @@
 import React from 'react';
 import ListWithIcons from '../../components/ListWithIcons';
-const JantiScreen = () => {
-  const items = ['Jantivarse 1', 'Jantivarse 2', 'Jantivarse 3'];
+const JantiScreen = ({ route }: { route: any }) => {
+  const { data } = route.params;
 
-  return  <ListWithIcons title="Jantivarse" items={items} />;
+  if (!data || !Array.isArray(data)) {
+    return <ListWithIcons title="Janti Varsai" items={["No data available"]} />;
+  }
+
+  const items = data.map((item: any) => item.name); // Or item.notation, based on your JSON
+
+  return <ListWithIcons title="Janti Varsai" items={items} />;
 };
 
 

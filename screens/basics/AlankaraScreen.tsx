@@ -1,13 +1,16 @@
 import React from 'react';
 import ListWithIcons from '../../components/ListWithIcons';
 
-export const AlankaraScreen = () => {
-    const items = ['Alankara_1', 'Alankara_2', 'Alankara_3'];
+const AlankaraScreen = ({ route }: { route: any }) => {
+  const { data } = route.params;
 
-  return  <ListWithIcons title="Alankara" items={items} />;
+  if (!data || !Array.isArray(data)) {
+    return <ListWithIcons title="Alankaras" items={["No data available"]} />;
+  }
 
+  const items = data.map((item: any) => item.name); // Or item.notation, based on your JSON
+
+  return <ListWithIcons title="Alankaras" items={items} />;
 };
-
-
 
 export default AlankaraScreen;

@@ -1,22 +1,31 @@
 import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import musicData from '../assets/music.json'; // adjust the path if needed
 
 const HomeScreen = ({ navigation }) => {
-  const goTo = (page) => navigation.navigate(page);
+  const goTo = (page, data = null) => {
+    if (data) {
+      navigation.navigate(page, { data });
+    } else {
+      navigation.navigate(page);
+    }
+  };
 
   return (
     <View style={styles.container}>
       <Text style={styles.header}>Welcome to Carnatic App</Text>
-      <TouchableOpacity style={styles.button} onPress={() => goTo('VarnasScreen')}>
+
+      <TouchableOpacity style={styles.button} onPress={() => goTo('VarnasScreen', musicData['Varnas'])}>
         <Text style={styles.buttonText}>Varnas</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => goTo('KritisScreen')}>
+
+      <TouchableOpacity style={styles.button} onPress={() => goTo('KritisScreen', musicData['Krithis'])}>
         <Text style={styles.buttonText}>Kritis</Text>
       </TouchableOpacity>
+
       <TouchableOpacity style={styles.button} onPress={() => goTo('BasicsScreen')}>
         <Text style={styles.buttonText}>Basics</Text>
       </TouchableOpacity>
-      
     </View>
   );
 };

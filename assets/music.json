@@ -13,12 +13,14 @@
     { "name": "Sarali Varisai 4", "ragam": "Mayamalavagowla", "talam": "Adi" },
     { "name": "Sarali Varisai 5", "ragam": "Mayamalavagowla", "talam": "Adi" }
   ],
-  "Janta Varsai": [
-    { "name": "Janta Varisai 1", "ragam": "Mayamalavagowla", "talam": "Adi" },
-    { "name": "Janta Varisai 2", "ragam": "Mayamalavagowla", "talam": "Adi" },
-    { "name": "Janta Varisai 3", "ragam": "Mayamalavagowla", "talam": "Adi" },
-    { "name": "Janta Varisai 4", "ragam": "Mayamalavagowla", "talam": "Adi" },
-    { "name": "Janta Varisai 5", "ragam": "Mayamalavagowla", "talam": "Adi" }
+
+  "Janti Varsai": [
+    { "name": "Janti Varisai 1", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janti Varisai 2", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janti Varisai 3", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janti Varisai 4", "ragam": "Mayamalavagowla", "talam": "Adi" },
+    { "name": "Janti Varisai 5", "ragam": "Mayamalavagowla", "talam": "Adi" }
+
   ],
   "Datu Varsai": [
     { "name": "Datu Varisai 1", "ragam": "Mayamalavagowla", "talam": "Adi" },
@@ -27,15 +29,16 @@
     { "name": "Datu Varisai 4", "ragam": "Mayamalavagowla", "talam": "Adi" }
   ],
   "Swarajathi": [
-    { "name": "Rara Venu Gopabala", "ragam": "Bilahari", "talam": "Adi" },
-    { "name": "Sami Ninne", "ragam": "Ananda Bhairavi", "talam": "Adi" },
-    { "name": "Himagiri Tanaye", "ragam": "Shuddha Dhanyasi", "talam": "Adi" }
+    { "name": "Rara Venu Gopabala", "ragam": "Bilahari", "talam": "Adi","pdfName": "Abhogi_Varna.pdf" },
+    { "name": "Sami Ninne", "ragam": "Ananda Bhairavi", "talam": "Adi","pdfName": "Abhogi_Varna.pdf" },
+    { "name": "Himagiri Tanaye", "ragam": "Shuddha Dhanyasi", "talam": "Adi" ,"pdfName": "Abhogi_Varna.pdf"}
   ],
   "Varnas": [
-    { "name": "Vanajaksha", "ragam": "Kalyani", "talam": "Adi" },
-    { "name": "Ninnukori", "ragam": "Mohanam", "talam": "Adi" },
-    { "name": "Era Napai", "ragam": "Todi", "talam": "Adi" },
-    { "name": "Chalamela", "ragam": "Natakurinji", "talam": "Adi" }
+    { "name": "Vanajaksha", "ragam": "Kalyani", "talam": "Adi","pdfName": "Abhogi_Varna.pdf" },
+    { "name": "Ninnukori", "ragam": "Mohanam", "talam": "Adi","pdfName": "Abhogi_Varna.pdf" },
+    { "name": "Era Napai", "ragam": "Todi", "talam": "Adi" ,"pdfName": "Abhogi_Varna.pdf"},
+    { "name": "Chalamela", "ragam": "Natakurinji", "talam": "Adi" ,"pdfName": "Abhogi_Varna.pdf"}
+
   ],
   "Krithis": [
     { "name": "Vatapi Ganapatim", "ragam": "Hamsadhwani", "talam": "Adi" },

@@ -1,12 +1,17 @@
 import React from 'react';
 import ListWithIcons from '../../components/ListWithIcons';
 
-const DatuScreen = () => {
-    const items = ['Datuvarse 1', 'Datuvarse 2', 'Datuvarse 3'];
+const DatuScreen = ({ route }: { route: any }) => {
+const { data } = route.params;
 
-  return  <ListWithIcons title="Datuvarse" items={items} />;
+  if (!data || !Array.isArray(data)) {
+    return <ListWithIcons title="Datu Varsai" items={["No data available"]} />;
+  }
+
+  const items = data.map((item: any) => item.name); // Or item.notation, based on your JSON
+
+  return <ListWithIcons title="Datu Varsai" items={items} />;
 };
-
 
 
 export default DatuScreen;
